@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Admission - Login / Register</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Student Admission</h1>
+
+    <div class="card" id="authCard">
+      <div class="tabs">
+        <button id="loginTab" class="active">Login</button>
+        <button id="registerTab">Register</button>
+      </div>
+
+      <form id="loginForm" class="form">
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Password<input type="password" name="password" required minlength="6" /></label>
+        <button type="submit">Login</button>
+        <p class="message" id="loginMsg"></p>
+      </form>
+
+      <form id="registerForm" class="form hidden">
+        <label>Full name<input type="text" name="name" required /></label>
+        <label>Date of birth<input type="date" name="dob" required /></label>
+        <label>Course<input type="text" name="course" required /></label>
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Password<input type="password" name="password" required minlength="6" /></label>
+        <button type="submit">Register</button>
+        <p class="message" id="registerMsg"></p>
+      </form>
+    </div>
+
+    <footer>
+      <small>Static demo + simple backend stub. For production, use secure session handling and HTTPS.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
